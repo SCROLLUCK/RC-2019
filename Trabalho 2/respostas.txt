@@ -1,0 +1,21 @@
+Trabalho 2 - Redes de Computadores 
+Lucas de Lima Castro - 21551892
+
+1: O IP do computador cliente é: 192.168.0.3 e o numero da porta: 49201
+2: O IP do servidor  gaia.cs.umass.edu é 128.119.245.12
+3: O numero de sequência é: 0. 
+   O parametro Tags do seguimento, com o campo (SYN) setado para:1 , indica que este seguimento é do tipo (SYN).
+4: O numero de sequencia enviado do servidor para o client foi: 0
+   Valor do campo ACKnowledgement é: 1
+   O valor do campo ACKnowledgement é definido pelo servidor como sendo o: (número de sequência recebido)+1
+   O seguimento é determinado como (SYN,ACK) quando no campo Tags os valores SYN e ACKnowledgement estão setados para: 1
+5:O numero de sequencia é: 121813
+6:
+7:O Tamanho do Buffer é 29200
+8:Não Houve retransmissão
+9:
+10: Do servidor para minha maquina foram enviados 103 pacotes
+    Da minha maquina para o servidor foram enviados 111 pacotes
+    O numero de pacotes enviados da minha maquina para o servidor poderia ser igual ao numero de pacotes enviados pelo servidor pra minha maquina.
+    Mas somente se numero de Acks fosse igual ao (Numero de pacotes enviados)-1
+    pois o 3-handshake envia sempre um pacote a mais na hora da conexão.

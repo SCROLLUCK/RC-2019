@@ -1,0 +1,45 @@
+Redes de Computadores - Trabalho 3 / Lucas de Lima Castro - 21551892
+
+1: Meu endereço IP é: 192.168.0.8
+2: O valor do campo de protocolo da Camada Superior é: ICMP(1).
+3: O Cabeçalho IP tem: 20 bytes.
+   O Pacote tem 36 bytes de carga útil.
+   A carga útil é calcula subtraindo o Tamanho do Cabeçalho do Tamanho Total do pacote.
+   56 bytes(Tamanho Total) - 20 bytes(cabeçalho IP) = 36 bytes(Carga Útil)
+4: Não houve fragmentação.(para o pacote com 56 bytes)
+   O programa wireshark não mostrou nenhuma lista de fragmentos IPv4.
+5: Os campos que mudam são: Identification, TTL, Header Checksun, Numero de sequencia do pacote.
+6: Os campos que permanecem constantes são:
+
+     Versão, Tamanho do Cabeçalho, Differentiated Service Fields, Total Length, Flags, Protocol,
+     Header checksun status, Source, Destination.
+
+   Os Campos que devem permanecer constantes são: Versão, Tamanho do Cabeçalho, Total Length, Flags, Protocol, Source, Destination.
+   Os Campos que devem mudar são:
+      
+     Header checksun: Muda pois os valores de outros campos o enfluenciam.
+     Header checksun status: Muda se ouver perda de informações na transferencia do servidor para o cliente.
+     TTL: Muda pois estavamos usando para fazer o teste.
+     Identification: Identificação individual do pacote.
+
+7: A identificação dos pacotes é sempre incrementado em 1.
+8: O campo de identificação é diferente pra casa pacote (ICMP TTL- exceeded) porem o campo TTL é igual para todos e igual à: 64
+9: Somente os valores de TTL permaneceram iguais, os valores de identificação são diferentes
+10: Sim, foi fragementado em 2 segmentos IPv4.
+11: No campo flags do primeiro pacote fragmentado
+ 
+    A flag "More framents" está setada para: 1 :: Indicando que hà mais fragmentos
+    A flag "Fragment offset" está setado para: 0 :: Indicando que este fragmento contem os primeiros(0-1479)bytes do pacote original
+    O tempo de vida(TTL) desse pacote é 1.
+
+12: No campo flags do segundo pacote fragmentado 
+
+    A flag "More fragments" está setada para: 0 :: Indicando que este é o ultimo fragmento
+    A flag "Fragment offset" está setado com o valor: 185 :: Indicando que este framgmento contem até (1500/8)bytes do pacote original
+
+13: Os campos que mudam do primeiro para o segundo fragmento são: Fragment offset, More Framents, Header checksun status, Total Length
+14: O pacote original foi fragmentado em 3 segmentos IPv4
+15: Nos 2 primeiros fragmentos os campos que mudam são: Header checksun, Fragment offset 
+    E No último fragmento os campos que mudam são: Header checksun, fragment offset, total Length, 
+    Neste pacote hà uma lista de frames dos segmentos que pertencem ao pacote original.
+     

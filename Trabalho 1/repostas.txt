@@ -1,0 +1,19 @@
+1: Versão do HTTP 1.1 Na maquina e no servidor
+2: Linguaguem: en-US
+3: Meu IP: 10.208.201.25 IP do server: 128.119.245.12
+4: Código "200"
+5: Mon, 14 Oct 2019 05:59:01
+6: 128 Bytes
+7: Não vi
+8: Não vi
+9:  Sim, no campo "Line-based text data" é exibido o conteudo retornado pelo servidor
+10: Sim, o campo "IF-MODIFIED_SINCE" a informação é: Mon, 14 Oct 2019 05:59:01
+11: "304 Not Modified" foi retornado pelo servidor
+12: Enviou "2" requisiçoes GET. O numero do pacote é "949"
+13: O numero do pacote é "966".
+14: o codigo de estado é "200" e a frase é "OK"
+15: São necessarios 3 Segmentos TCP
+16: 3 Requisições, 1 endereço: 128.119.245.12
+17: Ele baixou as imagens serialmente, pois há 1 requisição GET para cada imagem.
+18: A resposta do servidor para o GET inicial é "401 Unauthorized"
+19: Os campos "Authorization" e "Credentials" são adicionados ao Segundo GET
